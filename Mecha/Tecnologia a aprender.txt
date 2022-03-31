@@ -1,0 +1,5 @@
+• Socket.IO || JWT 
+• Material UI || Bootstrap || TailwindCss || Chackra UI || Radix
+• React || Angular
+• Diferencias entre tipos de testing Unit, Integration, Functional
+• Jest || react-testing || Cypress || Enzyme
