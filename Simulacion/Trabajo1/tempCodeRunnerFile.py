@@ -1,2 +1,1 @@
-docena(1)
-print(numeros)
+CANT_MUESTRA

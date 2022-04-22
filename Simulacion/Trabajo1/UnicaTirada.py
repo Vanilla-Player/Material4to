@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np 
 
-CANT_REPETICIONES = 100
+CANT_REPETICIONES = 1000
 sum = 0
 promedios = []
 posibilidades = []
@@ -10,6 +10,7 @@ desvios = []
 tirada =[]
 f_relative =[]
 varianzas =[]
+
 
 for i in range(37):
     posibilidades.append(i)
@@ -38,6 +39,15 @@ plt.xlabel('N')
 plt.ylabel('Varianzas')
 plt.plot(varianzas)
 plt.axhline(114,color='red',ls='solid')
+
+plt.figure(num='Dispersion')
+
+plt.xlabel('N')
+plt.ylabel('Valores')
+plt.scatter(y=tirada, x=range(CANT_REPETICIONES), s=10)
+
+
+
 
 plt.figure(num='Desvios')
 

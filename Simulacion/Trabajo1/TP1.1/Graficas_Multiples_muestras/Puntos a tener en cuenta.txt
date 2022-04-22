@@ -1,0 +1,3 @@
+Al aumentar la cantidad de muestras, vemos como se juntan los puntos en unos valores
+
+Al aumentar la cantidada de tiradas, se achica el conjunto de valores que puede tomar

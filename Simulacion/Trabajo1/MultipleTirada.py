@@ -3,7 +3,7 @@ import random
 import numpy
 
 CANT_REPETICIONES = 1000
-CANT_MUESTRA = 1000
+CANT_MUESTRA = 30
 posibilidades = []
 promedios = []
 varianzas = []
@@ -39,29 +39,34 @@ for j in range(CANT_MUESTRA):
 plt.figure(num='Frecuencia relativa')
 
 
-plt.xlabel('Numero Tiradas')
+plt.xlabel('Numero Muestras')
 plt.ylabel('Frecuencia Relativa')
-plt.bar(height= frecuenciaRelativa, x=range(CANT_MUESTRA) )
+plt.scatter(y= frecuenciaRelativa, x=range(CANT_MUESTRA) )
+# plt.bar(height= frecuenciaRelativa, x=range(CANT_MUESTRA) )
 plt.axhline(1/37,color='red',ls='solid')
 
 plt.figure(num='Varianzas')
 
-plt.xlabel('Numero Tiradas')
+plt.xlabel('Numero Muestras')
 plt.ylabel('Varianzas')
-plt.bar(height=varianzas,x=range(CANT_MUESTRA))
+plt.scatter(y=varianzas,x=range(CANT_MUESTRA))
+# plt.bar(height=varianzas,x=range(CANT_MUESTRA))
 plt.axhline(114,color='red',ls='solid')
 
 plt.figure(num='Desvios')
 
-plt.xlabel('Numero Tiradas')
+plt.xlabel('Numero Muestras')
 plt.ylabel('Desvios')
-plt.bar(height=desvios,x=range(CANT_MUESTRA))
+#plt.bar(height=desvios,x=range(CANT_MUESTRA))
+plt.scatter(x=range(CANT_MUESTRA), y=desvios)
 plt.axhline(10.6771,color='red',ls='solid')
 
 plt.figure(num='Promedios')
 
-plt.xlabel('Numero Tiradas')
+plt.xlabel('Numero Muestras')
 plt.ylabel('Promedios')
-plt.bar(height=promedios,x=range(CANT_MUESTRA))
+
+plt.scatter(y=promedios,x=range(CANT_MUESTRA))
+# plt.bar(height=promedios,x=range(CANT_MUESTRA))
 plt.axhline(18,color='red',ls='solid')
 plt.show()
